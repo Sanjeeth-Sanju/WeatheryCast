@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast Check</title>
+    <link rel = "stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Great+Vibes&family=Gruppo&family=Lexend+Exa:wght@100..900&family=Oswald:wght@200..700&family=Pacifico&family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+NO:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Shojumaru&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1 class="mainh1">WeatheryCast</h1>
+    <div class = "container">
+
+       <form action="/submit" method = "POST">
+          <input type="text" placeholder = "Enter your location" name="location"class="formInput">
+       </form>
+
+
+<%if(locals.temperature && locals.description && locals.humidity && locals.windSpeed && locals.cloudiness) { %>
+   <div class="gridContainer">
+      <h1 class="subh1"><%=temperature%></h1>
+      
+      <p class="messagep">
+        <%=description%><br/>
+        Humidity: <%=humidity%><br/>
+        Wind Speed: <%=windSpeed%><br/>
+        Cloudiness: <%=cloudiness%>
+      </p>
+   </div>
+    <p class="subp"><%=name%>📍</p>
+<%} else if(locals.errorMessage){%>
+    <p class="errorp"><%=errorMessage%></p>
+<%} else {%>
+    <p class="errorp"><%=message%></p>
+<%}%>    
+</div>
+    <footer class="footer">
+        <p><em>©2025 Sanjeeth. All rights reserved.</em></p>
+    </footer>
+</body>

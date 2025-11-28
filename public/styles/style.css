@@ -1,0 +1,187 @@
+body{
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+background: linear-gradient(140deg,
+  #FFEC8B 0%,
+  #FFB84D 8%,
+  #A7E5FF 20%,
+  #B8D4F3 40%,
+  #94AFCF 60%,
+  #748CA9 75%,
+  #475569 87%,
+  #1E293B 100%
+);
+
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+
+    width: 450px;
+    padding: 30px;
+
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.03);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.35);
+}
+
+.mainh1{
+    font-family: "Source Code Pro";
+    color:  #F1F5F9;
+    text-align: center;
+    font-size: 6rem;
+    margin-top:0px;
+    margin-bottom:40px;
+}
+.messagep{
+    text-align: center;
+}
+.formInput{
+    height:30px;
+    width:400px;
+    border: 5px solid rgba(255,255,255,0.3);
+    border-radius: 40px;
+    text-align: start;
+    font-size: 0.875rem;
+    font-family: "Lexend Exa";
+    padding-left: 10px;
+    transition: all 0.3s ease;
+}
+.formInput:focus{
+    outline: black;
+}
+
+.subh1{
+    font-family: "Varela Round";
+    font-size: 5.6rem;
+    color: #002455;
+}
+.messagep{
+    text-align: left !important;
+    line-height: 1.6;
+    font-family: "Lexend Exa";
+    margin: 60px 0px;
+    font-size: 0.94rem;
+    color:#0F0E0E;
+}
+.gridContainer{
+    align-self: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    
+}
+.subp{
+   font-size: 0.94rem;
+    font-family: "Lexend Exa";
+    color:#0F0E0E;
+}
+.errorp{
+    font-size: 0.94rem;
+    font-family: "Lexend Exa"; 
+    text-align:center;
+    color:#0F0E0E;
+    margin-top: 40px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    font-size: 0.94rem;
+
+}
+@media (max-width: 480px) {
+      .mainh1{
+        font-size: 3rem;
+      }
+      .container{
+        width: 280px;
+      }
+      .formInput{
+        width: 200px;
+      }
+      .gridContainer{
+          grid-template-columns: 1fr;
+          align-self:center;
+          gap:10px;
+      }
+      .subh1{
+        margin-bottom: 20px;
+        font-size: 4rem;
+      }
+      .messagep{
+        margin:20px 0;
+        font-size: 20px;
+      }
+      .subp{
+        font-size: 20px;
+      }
+}
+@media (max-width: 600px) and (min-width: 480px) {
+      .mainh1{
+        font-size: 4rem;
+      }
+      .container{
+        width: 280px;
+      }
+      .formInput{
+        width: 200px;
+      }
+      .gridContainer{
+          grid-template-columns: 1fr;
+          align-self:center;
+          gap:10px;
+      }
+      .subh1{
+        margin-bottom: 20px;
+      }
+      .messagep{
+        margin:20px 0;
+        font-size: 20px;
+      }
+      .subp{
+        font-size: 20px;
+      }
+}
+@media (max-width: 750px) and (min-width: 600px) {
+      .mainh1{
+        font-size: 5rem;
+      }
+      .container{
+        width: 280px;
+      }
+      .formInput{
+        width: 200px;
+      }
+      .gridContainer{
+          grid-template-columns: 1fr;
+          align-self:center;
+          gap:10px;
+      }
+      .subh1{
+        margin-bottom: 20px;
+      }
+      .messagep{
+        margin:20px 0;
+        font-size: 20px;
+      }
+      .subp{
+        font-size: 20px;
+      }
+}
