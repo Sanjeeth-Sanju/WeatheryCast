@@ -20,7 +20,10 @@ app.post("/submit", async (req, res)=>{
    try{
    const userEnteredLocation = req.body.location;
    const geoCoordinates = await axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${userEnteredLocation}&appid=${myOpenWeatherApiKey}`);
-   
+
+    if (!geoCoordinates.data.length) {
+      throw new Error("Invalid location");
+     }  
    const userLat = geoCoordinates.data[0].lat;
    const userLon = geoCoordinates.data[0].lon; 
 
