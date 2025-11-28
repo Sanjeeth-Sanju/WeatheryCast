@@ -2,6 +2,8 @@
 WeatheryCast is a real-time weather forecast website built using **Node.js**, **Express**, **Axios**, and **EJS**.  
 Users can enter any city in the world and instantly view temperature, humidity, wind speed, cloudiness, and weather description — all retrieved from the **OpenWeather API**.
 
+**Live Demo** - _https://weatherycast.onrender.com_
+
 # **Features** 
 - Real-time weather updates using OpenWeather API  
 - Beautiful **glassmorphism UI design**  
