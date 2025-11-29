@@ -15,7 +15,8 @@ Users can enter any city in the world and instantly view temperature, humidity, 
 - **Backend** - Node.js + Express  
 - **Templating** - EJS  
 - **HTTP Client** - Axios  
-- **API** - OpenWeatherMap (free)   
+- **API** - OpenWeatherMap (free)
+- Secured API key using **.env** file  
 - **Frontend** - Pure HTML + CSS (no frameworks)  
 - **Design** - Glassmorphism (I tried) + CSS Gradients  
 - **Deployment** - Render
